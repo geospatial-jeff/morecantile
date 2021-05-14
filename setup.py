@@ -8,7 +8,7 @@ with open("README.md") as f:
 inst_reqs = ["rasterio>=1.1.7", "pydantic"]
 
 extra_reqs = {
-    "test": ["mercantile", "pytest", "pytest-cov"],
+    "test": ["mercantile<1.2.0", "pytest", "pytest-cov"],
     "dev": ["pytest", "pytest-cov", "pre-commit"],
     "docs": ["mkdocs", "mkdocs-material", "pygments"],
 }
